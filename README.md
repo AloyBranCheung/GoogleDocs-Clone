@@ -2,7 +2,7 @@
 
 Techs: <div> 
 <img width="45px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-<img width="45px" src="https://quilljs.com/assets/images/logo.svg">
+<img width="60px" src="https://quilljs.com/assets/images/logo.svg">
 <img width="45px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original-wordmark.svg" />
 <img width="45px" src="https://raw.githubusercontent.com/devicons/devicon/c5378d6c2510ffa0b3e4475af95618a8048d6cf1/icons/nodejs/nodejs-original.svg">
 <img width="45px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg">
