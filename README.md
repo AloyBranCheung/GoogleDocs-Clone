@@ -22,6 +22,6 @@ A google docs clonse made with Quill and Socket.io connected to MongoDB Atlas fo
 
 
 ## To run 
-`npm run devStart` for server and `npm start` for client 
+connect your own mongodb atlas then `npm run devStart` for server and `npm start` for client 
 
 Source: <a href="https://www.youtube.com/watch?v=iRaelG7v0OU&ab_channel=WebDevSimplified">Link</a>
