@@ -10,7 +10,7 @@ Techs: <div>
 </div>
  
 
-A google docs clonse made with Quill and Socket.io connected to MongoDB Atlas for backend. 
+A google docs clone made with Quill and Socket.io connected to MongoDB Atlas for backend. 
 
 ## Samples
 
