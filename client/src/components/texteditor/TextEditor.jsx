@@ -24,7 +24,9 @@ export default function TextEditor() {
 
   // SocketIO setup
   useEffect(() => {
-    const s = io("http://localhost:3001/", { transports: ["websocket"] });
+    const s = io(process.env.REACT_APP_SERVER_URL, {
+      transports: ["websocket"],
+    });
     setSocket(s);
 
     return () => {

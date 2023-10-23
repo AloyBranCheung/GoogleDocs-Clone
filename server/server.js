@@ -1,8 +1,23 @@
 require("dotenv").config("./.env");
+const http = require("http");
+
+const PORT = process.env.PORT || 3001;
+
+const server = http.createServer(async (req, res) => {
+  if (req.url === "/api/_health" && req.method === "GET") {
+    res.statusCode = 200;
+    res.statusMessage = "OK";
+    res.end(JSON.stringify({ message: "OK" }));
+  } else {
+    res.statusCode = 404;
+    res.status = "Not Found";
+    res.end(JSON.stringify({ message: "Not found." }));
+  }
+});
 
 // require SocketIO and Mongoose
-const io = require("socket.io")(3001, {
-  cors: { origin: "http://localhost:3000/", methods: ["GET", "POST"] },
+const io = require("socket.io")(server, {
+  cors: { origin: process.env.CLIENT_URL, methods: ["GET", "POST"] },
 });
 const mongoose = require("mongoose");
 const Document = require("./document");
@@ -46,4 +61,8 @@ io.on("connection", (socket) => {
       await Document.findByIdAndUpdate(documentId, { data });
     });
   });
+});
+
+server.listen(PORT, () => {
+  console.log(`Server listening on port: ${PORT}`);
 });
