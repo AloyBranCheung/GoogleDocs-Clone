@@ -2,8 +2,11 @@
 
 To run:
 
-1. `cd server/ && npm install && npm run dev`
-2. `cd client/ && npm install && npm run start`
+1. `./concurrently_dev.sh` no docker
+
+or
+
+1. `./prod.sh` with docker (not dev mode though)
 
 Techs: <div>
 <img width="45px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
